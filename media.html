@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sytels/media-style/style.css" />
+    <title>Media Element</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="top">
+        <nav class="navbar">
+          <div></div>
+          <ul>
+            <li><a href="index.html">Profile </a></li>
+            <li><a href="form.html">AltSchool Form</a></li>
+            <li>
+              <a href="media.html" class="droplink drop">Media Elements</a>
+            </li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+          <div>
+            <h1>HTML Image Element</h1>
+            <h2>Attributes of Image Element:</h2>
+            <ul class="list">
+              <li>src: Specifies the URL of the image file.</li>
+              <li>alt: Provides a text description of the image.</li>
+              <li>width: Specifies the width of the image.</li>
+              <li>height: Specifies the height of the image.</li>
+            </ul>
+            <div>
+              <div>
+                <h2>Image Element using internal source</h2>
+                <img
+                  src="./assests/images/mypro/my.png"
+                  alt="myself photo"
+                  class="myself"
+                />
+              </div>
+              <div>
+                <details class="pro">
+                  <summary>Front End Engineer <i>(PsalmoTee)</i></summary>
+                  A passionate <span>front-end developer</span>creating dynamic
+                  and user-friendly web applications. Skilled in
+                  <b>HTML, CSS, JavaScript, and React,</b> a knack for crafting
+                  visually appealing and responsive designs. With a strong focus
+                  on user experience and performance optimization, I
+                  continuously strives to enhance web functionality and
+                  aesthetics. I'm eager to contribute to innovative projects and
+                  collaborate with talented teams to push the boundaries of web
+                  development.
+                </details>
+              </div>
+
+              <h2>Eaxample 1: Image Element using external source</h2>
+              <img
+                src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+                alt="A Software Developer"
+                class="web-dev"
+              />
+              <h3>A Software Developer</h3>
+              <p>
+                A software developer is a professional who designs, creates,
+                tests, and maintains software applications or systems. They use
+                programming languages and development tools to write code that
+                enables software to perform specific tasks, solve problems, or
+                meet the needs of users. Software developers work in various
+                industries, creating a wide range of applications, from simple
+                mobile apps to complex enterprise systems.
+              </p>
+              <ul>
+                <li>
+                  Designing Software: Creating the architecture and design for
+                  software applications based on user requirements and technical
+                  specifications.
+                </li>
+                <li>
+                  Writing Code: Using programming languages like Python, Java,
+                  C++, or JavaScript to develop software that performs desired
+                  functions.
+                </li>
+                <li>
+                  Testing and Debugging: Ensuring that software is free of bugs
+                  and errors by conducting tests and troubleshooting issues.
+                </li>
+                <li>
+                  Maintaining and Updating Software: Making improvements and
+                  updates to existing software to enhance functionality,
+                  security, and performance.
+                </li>
+                <li>
+                  Collaborating with Teams: Working closely with other
+                  developers, designers, project managers, and stakeholders to
+                  deliver software that meets project goals.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h1>HTML Media Element</h1>
+            <p>
+              A media element refers to a component in web development that is
+              used to embed and control media content, such as audio and video,
+              within a web page. The term is often associated with HTML5, which
+              introduced native elements for handling media without the need for
+              third-party plugins like Flash.
+            </p>
+            <h2>Common Media Elements in HTML5:</h2>
+            <h3>Audio Element: Used to embed audio files in a web page.</h3>
+            <ul>
+              <li>Internal Source Audio</li>
+              <li>External Source Audio</li>
+            </ul>
+
+            <h3>Attributes of Media Elements:</h3>
+            <ul>
+              <li>src: Specifies the URL of the media file.</li>
+              <li>controls: Adds playback controls to the media element.</li>
+              <li>autoplay: Automatically starts playing the media file.</li>
+              <li>loop: Repeats the media file indefinitely.</li>
+              <li>width: Specifies the width of the media element.</li>
+              <li>height: Specifies the height of the media element.</li>
+            </ul>
+
+            <h3>
+              There is Attributes `type` that can be used for it to specificed
+              the type
+            </h3>
+            <ul>
+              <li>audio/mp3</li>
+              <li>audio/wav</li>
+              <li>audio/ogg</li>
+            </ul>
+
+            <h2>Example 1: Audio Element Using Internal Source</h2>
+
+            <audio
+              src="./assests/audio/akon-right-now-5923-63423.mp3"
+              controls
+              type="audio/mp3"
+            ></audio>
+
+            <h2>Example 2: Audio Element Using External Source</h2>
+
+            <audio
+              src="https://www.prokerala.com/downloads/ringtones/download.php?id=63416"
+              controls
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <h3>Video Element Used to embed video files in a web page.</h3>
+          <ul>
+            <li>Internal Source Video</li>
+            <li>External Source Video</li>
+          </ul>
+
+          <h3>Attributes of Media Elements:</h3>
+          <ul>
+            <li>src: Specifies the URL of the media file.</li>
+            <li>controls: Adds playback controls to the media element.</li>
+            <li>autoplay: Automatically starts playing the media file.</li>
+            <li>loop: Repeats the media file indefinitely.</li>
+            <li>width: Specifies the width of the media element.</li>
+            <li>height: Specifies the height of the media element.</li>
+          </ul>
+
+          <h3>There Attributes `type` that can be used for it</h3>
+          <ul>
+            <li>video/mp4</li>
+            <li>video/webm</li>
+            <li>video/ogg</li>
+          </ul>
+
+          <div>
+            <h2>Example 1: Video Element Using Internal Source</h2>
+            <video src="./assests/video/1.mp4" controls></video>
+            <p>Internal Source Video</p>
+          </div>
+
+          <div>
+            <h2>Esample 2: Video Element using External Source</h2>
+            <video controls>
+              <source src="https://youtu.be/OeEHJgzqS1k" type="video/mp4" />
+            </video>
+          </div>
+
+          <h3>
+            Iframe Element: Used to embed external content, such as web pages or
+            videos, within a webpage.
+          </h3>
+          <ul>
+            <li>YouTube Video</li>
+            <li>Google Maps</li>
+            <li>Other Websites</li>
+          </ul>
+
+          <div>
+            <h2>Using Iframe</h2>
+            <iframe
+              width="648"
+              height="365"
+              src="https://www.youtube.com/embed/NWnBxQjssvQ"
+              title="Fastest way to become a Web Developer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p>Fastest way to become a Web Developer</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="top">
+      <a href="#top"
+        ><img src="./assests/images/mypro/arrow-up-solid.svg" alt="" />Top</a
+      >
+    </div>
+  </body>
+</html>
