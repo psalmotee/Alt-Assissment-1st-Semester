@@ -40,6 +40,7 @@ body {
   max-width: 50%;
   /* height: 100vh; */
   text-align: center;
+  background-color: #fffcf8;
 }
 
 .com-img {
@@ -64,6 +65,7 @@ body {
   background-color: #ffffff;
   max-height: 500px;
   overflow: auto;
+  padding: 40px;
 }
 
 .container {
@@ -162,10 +164,6 @@ input:focus {
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-}
-
-span {
-  margin-left: 70px;
 }
 
 /*  foooter */
