@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sytels/profile-style/style.css" />
+    <link rel="stylesheet" href="./sytels/pro-style.css" />
     <title>About Me</title>
   </head>
   <body>
@@ -24,7 +24,34 @@
       <main>
         <div class="container">
           <div class="img">
-            <img src="./assests/images/mypro/my.png" alt="" class="my-img" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assests/images/mypro/my.png"
+                sizes="1200px"
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="./assests/images/mypro/my.png"
+                sizes="992px"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assests/images/mypro/my.png"
+                sizes="768px"
+              />
+              <source
+                media="(min-width: 450px)"
+                srcset="./assests/images/mypro/my.png"
+                sizes="480px"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="./assests/images/mypro/my.png"
+                sizes="320px"
+              />
+              <img src="./assests/images/mypro/my.png" alt="" class="my-img" />
+            </picture>
             <div class="social-link">
               <a
                 href="https://www.linkedin.com/in/samson-moradayo-211b26187"

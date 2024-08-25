@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sytels/altStyles/style.css" />
+    <link rel="stylesheet" href="./sytels/form-style.css" />
     <title>Alt School Sign up Form</title>
   </head>
   <body>
@@ -22,13 +22,40 @@
         </nav>
       </header>
       <main>
-        <div class="flex-container">
+        <div class="flex-container container">
           <div class="img-left">
-            <img
-              src="./assests/images/altschool/alt school imga.png"
-              alt=""
-              class="com-img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assests/images/altschool/alt school imga.png"
+                sizes="1200px"
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="./assests/images/altschool/alt school imga.png"
+                sizes="992px"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assests/images/altschool/alt school imga.png"
+                sizes="768px"
+              />
+              <source
+                media="(min-width: 450px)"
+                srcset="./assests/images/altschool/alt school imga.png"
+                sizes="480px"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="./assests/images/altschool/alt school imga.png"
+                sizes="320px"
+              />
+              <img
+                src="./assests/images/altschool/alt school imga.png"
+                alt=""
+                class="com-img"
+              />
+            </picture>
             <div class="left-text">
               <h1>Learn highly sought after skills without hassle.</h1>
             </div>
@@ -317,9 +344,6 @@
                 acknowledge that I have read the <a href="">Privacy Policy.</a>
               </p>
               <button>Submit</button>
-              <span>
-                <a href="#top" class="to-top">To Top</a>
-              </span>
             </div>
           </div>
         </div>

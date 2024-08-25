@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sytels/media-style/style.css" />
+    <link rel="stylesheet" href="./sytels/media-style.css" />
     <title>Media Element</title>
   </head>
   <body>
@@ -35,11 +35,38 @@
             <div>
               <div>
                 <h2>Image Element using internal source</h2>
-                <img
-                  src="./assests/images/mypro/my.png"
-                  alt="myself photo"
-                  class="myself"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./assests/images/mypro/my.png"
+                    sizes="1200px"
+                  />
+                  <source
+                    media="(min-width: 992px)"
+                    srcset="./assests/images/mypro/my.png"
+                    sizes="992px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./assests/images/mypro/my.png"
+                    sizes="768px"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="./assests/images/mypro/my.png"
+                    sizes="480px"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="./assests/images/mypro/my.png"
+                    sizes="320px"
+                  />
+                  <img
+                    src="./assests/images/mypro/my.png"
+                    alt="myself photo"
+                    class="myself"
+                  />
+                </picture>
               </div>
               <div>
                 <details class="pro">
@@ -57,11 +84,48 @@
               </div>
 
               <h2>Eaxample 1: Image Element using external source</h2>
-              <img
-                src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
-                alt="A Software Developer"
-                class="web-dev"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
+                  "
+                  sizes="1200px"
+                />
+                <source
+                  media="(min-width: 992px)"
+                  srcset="
+                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
+                  "
+                  sizes="992px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
+                  "
+                  sizes="768px"
+                />
+                <source
+                  media="(min-width: 450px)"
+                  srcset="
+                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
+                  "
+                  sizes="450px"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
+                  "
+                  sizes="320px"
+                />
+                <img
+                  src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+                  alt="A Software Developer"
+                  class="web-dev"
+                />
+              </picture>
               <h3>A Software Developer</h3>
               <p>
                 A software developer is a professional who designs, creates,
@@ -138,20 +202,34 @@
             </ul>
 
             <h2>Example 1: Audio Element Using Internal Source</h2>
-
-            <audio
-              src="./assests/audio/akon-right-now-5923-63423.mp3"
-              controls
-              type="audio/mp3"
-            ></audio>
-
+            <audio src="./assests/audio/akon-right-now-5923-63423.mp3" controls>
+              <source
+                srcset="./assests/audio/akon-right-now-5923-63423.mp3"
+                type="audio/mp3"
+              />
+              <source
+                srcset="./assests/audio/akon-right-now-5923-63423.mp3"
+                type="audio/ogg"
+              />
+            </audio>
             <h2>Example 2: Audio Element Using External Source</h2>
-
             <audio
               src="https://www.prokerala.com/downloads/ringtones/download.php?id=63416"
               controls
-              type="audio/mp3"
-            ></audio>
+            >
+              <source
+                srcset="
+                  https://www.prokerala.com/downloads/ringtones/download.php?id=63416
+                "
+                type="audio/mp3"
+              />
+              <source
+                srcset="
+                  https://www.prokerala.com/downloads/ringtones/download.php?id=63416
+                "
+                type="audio/ogg"
+              />
+            </audio>
           </div>
 
           <h3>Video Element Used to embed video files in a web page.</h3>
@@ -179,7 +257,10 @@
 
           <div>
             <h2>Example 1: Video Element Using Internal Source</h2>
-            <video src="./assests/video/1.mp4" controls></video>
+            <video src="./assests/video/1.mp4" controls>
+              <source srcset="./assests/video/1.mp4" type="video/mp4" />
+              <source srcset="./assests/video/1.mp4" type="video/ogg" />
+            </video>
             <p>Internal Source Video</p>
           </div>
 
@@ -187,6 +268,7 @@
             <h2>Esample 2: Video Element using External Source</h2>
             <video controls>
               <source src="https://youtu.be/OeEHJgzqS1k" type="video/mp4" />
+              <source srcset="https://youtu.be/OeEHJgzqS1k" type="video/ogg" />
             </video>
           </div>
 
