@@ -21,54 +21,32 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <div class="container">
-          <div>
-            <h1>HTML Image Element</h1>
-            <h2>Attributes of Image Element:</h2>
-            <ul class="list">
-              <li>src: Specifies the URL of the image file.</li>
-              <li>alt: Provides a text description of the image.</li>
-              <li>width: Specifies the width of the image.</li>
-              <li>height: Specifies the height of the image.</li>
-            </ul>
+
+      <!-- ----- Main-------- -->
+      <div class="container">
+        <main>
+          <section>
+            <div class="text">
+              <h1>HTML Image Element</h1>
+              <h2>Attributes of Image Element:</h2>
+              <ul class="list">
+                <li>src: Specifies the URL of the image file.</li>
+                <li>alt: Provides a text description of the image.</li>
+                <li>width: Specifies the width of the image.</li>
+                <li>height: Specifies the height of the image.</li>
+              </ul>
+            </div>
+
             <div>
               <div>
                 <h2>Image Element using internal source</h2>
-                <picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="./assests/images/mypro/my.png"
-                    sizes="1200px"
-                  />
-                  <source
-                    media="(min-width: 992px)"
-                    srcset="./assests/images/mypro/my.png"
-                    sizes="992px"
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./assests/images/mypro/my.png"
-                    sizes="768px"
-                  />
-                  <source
-                    media="(min-width: 450px)"
-                    srcset="./assests/images/mypro/my.png"
-                    sizes="480px"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./assests/images/mypro/my.png"
-                    sizes="320px"
-                  />
-                  <img
-                    src="./assests/images/mypro/my.png"
-                    alt="myself photo"
-                    class="myself"
-                  />
-                </picture>
+                <img
+                  src="./assests/images/mypro/media img.jpg"
+                  alt="myself photo"
+                  class="media-img"
+                />
               </div>
-              <div>
+              <div class="summary-container">
                 <details class="pro">
                   <summary>Front End Engineer <i>(PsalmoTee)</i></summary>
                   A passionate <span>front-end developer</span>creating dynamic
@@ -82,50 +60,15 @@
                   development.
                 </details>
               </div>
+            </div>
 
+            <div>
               <h2>Eaxample 1: Image Element using external source</h2>
-              <picture>
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
-                  "
-                  sizes="1200px"
-                />
-                <source
-                  media="(min-width: 992px)"
-                  srcset="
-                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
-                  "
-                  sizes="992px"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
-                  "
-                  sizes="768px"
-                />
-                <source
-                  media="(min-width: 450px)"
-                  srcset="
-                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
-                  "
-                  sizes="450px"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg
-                  "
-                  sizes="320px"
-                />
-                <img
-                  src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
-                  alt="A Software Developer"
-                  class="web-dev"
-                />
-              </picture>
+              <img
+                src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+                alt="A Software Developer"
+                class="web-dev"
+              />
               <h3>A Software Developer</h3>
               <p>
                 A software developer is a professional who designs, creates,
@@ -163,146 +106,165 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </section>
 
-          <div>
-            <h1>HTML Media Element</h1>
-            <p>
-              A media element refers to a component in web development that is
-              used to embed and control media content, such as audio and video,
-              within a web page. The term is often associated with HTML5, which
-              introduced native elements for handling media without the need for
-              third-party plugins like Flash.
-            </p>
-            <h2>Common Media Elements in HTML5:</h2>
-            <h3>Audio Element: Used to embed audio files in a web page.</h3>
-            <ul>
-              <li>Internal Source Audio</li>
-              <li>External Source Audio</li>
-            </ul>
+          <section>
+            <div>
+              <h1>HTML Media Element</h1>
+              <p>
+                A media element refers to a component in web development that is
+                used to embed and control media content, such as audio and
+                video, within a web page. The term is often associated with
+                HTML5, which introduced native elements for handling media
+                without the need for third-party plugins like Flash.
+              </p>
+              <h2>Common Media Elements in HTML5:</h2>
+              <h3>Audio Element: Used to embed audio files in a web page.</h3>
+              <ul>
+                <li>Internal Source Audio</li>
+                <li>External Source Audio</li>
+              </ul>
 
-            <h3>Attributes of Media Elements:</h3>
-            <ul>
-              <li>src: Specifies the URL of the media file.</li>
-              <li>controls: Adds playback controls to the media element.</li>
-              <li>autoplay: Automatically starts playing the media file.</li>
-              <li>loop: Repeats the media file indefinitely.</li>
-              <li>width: Specifies the width of the media element.</li>
-              <li>height: Specifies the height of the media element.</li>
-            </ul>
+              <h3>Attributes of Media Elements:</h3>
+              <ul>
+                <li>src: Specifies the URL of the media file.</li>
+                <li>controls: Adds playback controls to the media element.</li>
+                <li>autoplay: Automatically starts playing the media file.</li>
+                <li>loop: Repeats the media file indefinitely.</li>
+                <li>width: Specifies the width of the media element.</li>
+                <li>height: Specifies the height of the media element.</li>
+              </ul>
 
-            <h3>
-              There is Attributes `type` that can be used for it to specificed
-              the type
-            </h3>
-            <ul>
-              <li>audio/mp3</li>
-              <li>audio/wav</li>
-              <li>audio/ogg</li>
-            </ul>
+              <h3>
+                There is Attributes `type` that can be used for it to specificed
+                the type
+              </h3>
+              <ul>
+                <li>audio/mp3</li>
+                <li>audio/wav</li>
+                <li>audio/ogg</li>
+              </ul>
 
-            <h2>Example 1: Audio Element Using Internal Source</h2>
-            <audio src="./assests/audio/akon-right-now-5923-63423.mp3" controls>
-              <source
-                srcset="./assests/audio/akon-right-now-5923-63423.mp3"
-                type="audio/mp3"
-              />
-              <source
-                srcset="./assests/audio/akon-right-now-5923-63423.mp3"
-                type="audio/ogg"
-              />
-            </audio>
-            <h2>Example 2: Audio Element Using External Source</h2>
-            <audio
-              src="https://www.prokerala.com/downloads/ringtones/download.php?id=63416"
-              controls
+              <h2>Example 1: Audio Element Using Internal Source</h2>
+              <audio
+                src="./assests/audio/akon-right-now-5923-63423.mp3"
+                class="audios"
+                controls
+              >
+                <source
+                  srcset="./assests/audio/akon-right-now-5923-63423.mp3"
+                  type="audio/mp3"
+                />
+                <source
+                  srcset="./assests/audio/akon-right-now-5923-63423.mp3"
+                  type="audio/ogg"
+                />
+              </audio>
+              <h2>Example 2: Audio Element Using External Source</h2>
+              <audio
+                src="https://www.prokerala.com/downloads/ringtones/download.php?id=63416"
+                class="audios"
+                controls
+              >
+                <source
+                  srcset="
+                    https://www.prokerala.com/downloads/ringtones/download.php?id=63416
+                  "
+                  type="audio/mp3"
+                />
+                <source
+                  srcset="
+                    https://www.prokerala.com/downloads/ringtones/download.php?id=63416
+                  "
+                  type="audio/ogg"
+                />
+              </audio>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <h3>Video Element Used to embed video files in a web page.</h3>
+              <ul>
+                <li>Internal Source Video</li>
+                <li>External Source Video</li>
+              </ul>
+
+              <h3>Attributes of Media Elements:</h3>
+              <ul>
+                <li>src: Specifies the URL of the media file.</li>
+                <li>controls: Adds playback controls to the media element.</li>
+                <li>autoplay: Automatically starts playing the media file.</li>
+                <li>loop: Repeats the media file indefinitely.</li>
+                <li>width: Specifies the width of the media element.</li>
+                <li>height: Specifies the height of the media element.</li>
+              </ul>
+
+              <h3>There Attributes `type` that can be used for it</h3>
+              <ul>
+                <li>video/mp4</li>
+                <li>video/webm</li>
+                <li>video/ogg</li>
+              </ul>
+
+              <div>
+                <h2>Example 1: Video Element Using Internal Source</h2>
+                <video src="./assests/video/1.mp4" class="videos" controls>
+                  <source srcset="./assests/video/1.mp4" type="video/mp4" />
+                  <source srcset="./assests/video/1.mp4" type="video/ogg" />
+                </video>
+                <p>Internal Source Video</p>
+              </div>
+
+              <div>
+                <h2>Esample 2: Video Element using External Source</h2>
+                <video class="videos" controls>
+                  <source src="https://youtu.be/OeEHJgzqS1k" type="video/mp4" />
+                  <source
+                    srcset="https://youtu.be/OeEHJgzqS1k"
+                    type="video/ogg"
+                  />
+                </video>
+              </div>
+
+              <h3>
+                Iframe Element: Used to embed external content, such as web
+                pages or videos, within a webpage.
+              </h3>
+              <ul>
+                <li>YouTube Video</li>
+                <li>Google Maps</li>
+                <li>Other Websites</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2>Using Iframe</h2>
+              <iframe
+                class="iframe"
+                width="648"
+                height="365"
+                src="https://www.youtube.com/embed/qgnmrPKbk2Q"
+                title="Welcome to AltSchool Africa"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p>Welcome to AltSchool Africa</p>
+            </div>
+          </section>
+
+          <!-- ---------      back to Top -->
+          <div class="top">
+            <a href="#top"
+              ><img src="./assests/images/mypro/arrow-up-solid.svg" alt="" />
+              <br />
+              Top</a
             >
-              <source
-                srcset="
-                  https://www.prokerala.com/downloads/ringtones/download.php?id=63416
-                "
-                type="audio/mp3"
-              />
-              <source
-                srcset="
-                  https://www.prokerala.com/downloads/ringtones/download.php?id=63416
-                "
-                type="audio/ogg"
-              />
-            </audio>
           </div>
-
-          <h3>Video Element Used to embed video files in a web page.</h3>
-          <ul>
-            <li>Internal Source Video</li>
-            <li>External Source Video</li>
-          </ul>
-
-          <h3>Attributes of Media Elements:</h3>
-          <ul>
-            <li>src: Specifies the URL of the media file.</li>
-            <li>controls: Adds playback controls to the media element.</li>
-            <li>autoplay: Automatically starts playing the media file.</li>
-            <li>loop: Repeats the media file indefinitely.</li>
-            <li>width: Specifies the width of the media element.</li>
-            <li>height: Specifies the height of the media element.</li>
-          </ul>
-
-          <h3>There Attributes `type` that can be used for it</h3>
-          <ul>
-            <li>video/mp4</li>
-            <li>video/webm</li>
-            <li>video/ogg</li>
-          </ul>
-
-          <div>
-            <h2>Example 1: Video Element Using Internal Source</h2>
-            <video src="./assests/video/1.mp4" controls>
-              <source srcset="./assests/video/1.mp4" type="video/mp4" />
-              <source srcset="./assests/video/1.mp4" type="video/ogg" />
-            </video>
-            <p>Internal Source Video</p>
-          </div>
-
-          <div>
-            <h2>Esample 2: Video Element using External Source</h2>
-            <video controls>
-              <source src="https://youtu.be/OeEHJgzqS1k" type="video/mp4" />
-              <source srcset="https://youtu.be/OeEHJgzqS1k" type="video/ogg" />
-            </video>
-          </div>
-
-          <h3>
-            Iframe Element: Used to embed external content, such as web pages or
-            videos, within a webpage.
-          </h3>
-          <ul>
-            <li>YouTube Video</li>
-            <li>Google Maps</li>
-            <li>Other Websites</li>
-          </ul>
-
-          <div>
-            <h2>Using Iframe</h2>
-            <iframe
-              width="648"
-              height="365"
-              src="https://www.youtube.com/embed/NWnBxQjssvQ"
-              title="Fastest way to become a Web Developer"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <p>Fastest way to become a Web Developer</p>
-          </div>
-        </div>
-      </main>
-    </div>
-    <div class="top">
-      <a href="#top"
-        ><img src="./assests/images/mypro/arrow-up-solid.svg" alt="" />Top</a
-      >
+        </main>
+      </div>
     </div>
   </body>
 </html>
