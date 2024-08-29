@@ -4,22 +4,13 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  min-width: 500px;
-}
-
-.container {
-  padding: 0 40px;
-  min-width: 500px;
-}
-
 /* //////// header */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 5px 20px;
+  background-color: #696ef5;
+  padding: 10px 20px;
 }
 
 .navbar ul {
@@ -28,8 +19,7 @@ body {
 }
 
 .navbar ul li {
-  margin: 0 15px;
-  position: relative;
+  margin: 0 5px;
 }
 
 .navbar ul a {
@@ -37,17 +27,27 @@ body {
   color: #fff;
   font-size: 18px;
   transition: color 0.3s ease;
+  padding: 5px;
 }
 
 .navbar li a:hover {
   color: #2c2424;
   background-color: #fff;
+  border-radius: 50px;
 }
 
-/* /////// tables */
+/* /////// Main -----tables */
+.container {
+  padding: 0 40px;
+  margin: 0 auto;
+  background-color: rgb(240, 231, 221);
+}
+
 table {
   border-collapse: collapse;
   border: 2px solid rgb(140 140 140);
+  border-spacing: 0;
+  width: 100%;
 }
 
 thead,
@@ -57,6 +57,7 @@ tfoot {
 
 th,
 td {
+  text-align: center;
   border: 1px solid rgb(160 160 160);
   padding: 8px 10px;
 }
@@ -67,4 +68,124 @@ tbody > tr:nth-of-type(even) {
 
 tbody > tr:nth-of-type(odd) {
   background-color: rgb(110, 201, 201);
+}
+
+.top {
+  display: none;
+}
+
+/* ---------- Responsiveness */
+
+/* //////// Laptop 1024 width */
+@media screen and (max-width: 1024px) {
+  /* ////////     Nav Bar */
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .navbar ul a {
+    font-size: 16px;
+  }
+}
+
+/* //////// Tablet 768 width */
+@media screen and (max-width: 768px) {
+  /* ////////     Nav Bar */
+  .navbar ul li {
+    margin: 0 5px;
+  }
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navbar ul a {
+    font-size: 15px;
+  }
+
+  /* ------ Fragment Identifier */
+  .top {
+    display: block;
+    text-align: right;
+    margin-right: 5px;
+  }
+
+  .top img {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .top a {
+    text-decoration: none;
+    color: rgb(204, 27, 95);
+    font-weight: 700;
+  }
+
+  /* ////// Main */
+
+  .top img {
+    width: 15px;
+  }
+}
+
+/* //////////// Mobile Large 425 width */
+@media screen and (max-width: 425px) {
+  /* ////////     Nav Bar */
+  .navbar ul li {
+    margin: 0;
+  }
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar ul a {
+    font-size: 12px;
+  }
+
+  /* ////// Main */
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  th,
+  td,
+  h1 {
+    font-size: 12px;
+  }
+
+  .top {
+    margin-right: -25px;
+  }
+
+  .top img {
+    width: 12px;
+  }
+
+  .top a {
+    font-size: 12px;
+  }
+}
+
+/* //////////// Mobile Large 425 width */
+@media screen and (max-width: 425px) {
+  /* ////////     Nav Bar */
+  .navbar ul li {
+    margin: 0;
+  }
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar ul a {
+    font-size: 12px;
+  }
+}
+
+/* //////////// Mobile Large 320 width */
+@media screen and (max-width: 320px) {
+  /* ////////     Nav Bar */
+
+  .navbar ul a {
+    font-size: 10px;
+  }
 }

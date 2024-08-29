@@ -3,11 +3,6 @@ body {
   padding: 0;
   margin: 0;
 }
-.container {
-  max-width: 1600px;
-  text-align: center;
-  margin: 0 auto;
-}
 
 /*////////////// header */
 .navbar {
@@ -212,18 +207,21 @@ input:focus {
   font-weight: 500;
 }
 
+/* ------ Fragment Identifier */
 .top {
+  text-align: right;
+}
+
+.top img {
   width: 20px;
-  position: absolute;
-  right: 20px;
-  bottom: -150px;
+  margin-right: 5px;
 }
 
 .top a {
   text-decoration: none;
-  color: rgb(190, 152, 94);
+  color: rgb(204, 27, 95);
+  font-weight: 700;
 }
-
 /* /////////// Responsiveness */
 
 /* //////// Laptop 1024 width */
@@ -236,6 +234,8 @@ input:focus {
   .navbar ul a {
     font-size: 16px;
   }
+
+  /* ------- Main-------- */
 
   /* /////// left image */
 
@@ -346,15 +346,13 @@ input:focus {
     padding: 10px 0;
   }
 
-  .top {
-    width: 18px;
-    font-size: 15px;
-    bottom: -500px;
-  }
-
   /* footer */
   .footer-container {
     display: none;
+  }
+
+  .top img {
+    width: 15px;
   }
 }
 
@@ -401,8 +399,12 @@ input:focus {
     width: 90%;
   }
 
-  .top {
-    bottom: -950px;
+  .top img {
+    width: 12px;
+  }
+
+  .top a {
+    font-size: 12px;
   }
 }
 
@@ -416,13 +418,6 @@ input:focus {
   .form-right .terms {
     width: 95%;
   }
-
-  .top {
-    width: 15px;
-    font-size: 12px;
-    bottom: -930px;
-    right: 10px;
-  }
 }
 
 /* //////////// Mobile Large 320 width */
@@ -433,16 +428,12 @@ input:focus {
     font-size: 10px;
   }
 
+  /* ----- Main------- */
   .select-opt {
     width: 280px;
   }
 
   .form-right .terms {
     width: 98%;
-  }
-
-  .top {
-    bottom: -1020px;
-    right: 15px;
   }
 }
